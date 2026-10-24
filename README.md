@@ -1,38 +1,88 @@
-# Учебные проекты по аналитике данных
+# Портфолио аналитика данных
 
-Портфолио учебных проектов по продуктовой аналитике, SQL и Python. В проектах я исследую пользовательское поведение, рассчитываю продуктовые метрики, проверяю гипотезы и формулирую рекомендации на основе данных.
+Учебные проекты по продуктовой аналитике, A/B-тестированию, SQL и построению аналитических пайплайнов. В каждом кейсе зафиксированы бизнес-задача, метод, измеримый результат, рекомендации и ограничения анализа.
 
-## Проекты
+## Избранные проекты
 
-| Проект | Задача | Инструменты |
-|---|---|---|
-| [Анализ вакансий](./SQL_Анализ%20вакансий/) | Исследовать рынок вакансий для аналитиков: зарплаты, работодателей, регионы, грейды и востребованные навыки | PostgreSQL, DBeaver |
-| [Исследование Donor Search](./SQL_Проект%20Donor%20Search/) | Изучить активность доноров, региональное распределение, бонусную систему и конверсию плановых донаций в фактические | PostgreSQL, DBeaver |
-| [Продуктовая аналитика WID](./Исcледование%20для%20проекта%20WID/) | Рассчитать продуктовые метрики и оценить результаты A/B-теста цифрового гардероба | Python, pandas, statsmodels, PostgreSQL, DataLens |
-| [Финансирование стартапов](./startup-funding-analysis/) | Исследовать динамику инвестиций и выбрать перспективные отрасли и инструменты финансирования | Python, pandas, Matplotlib |
-| [Обучающий онбординг](./fintech-onboarding-ab-test/) | Оценить влияние обучения инвестиционным рискам на депозитную активность | Python, статистика, bootstrap |
-| [Аналитика маркетплейса](./marketplace-product-analytics/) | Диагностировать продуктовые метрики, каналы привлечения и эксперимент с бонусом | Python, когортный анализ, A/B-тест |
-| [Витрина поездок такси](./taxi-payment-data-pipeline/) | Автоматизировать расчёт агрегатов по способам оплаты | PySpark, Airflow, S3, ClickHouse |
-| [Активность читателей](./reading-app-hypothesis-test/) | Сравнить активность пользователей Москвы и Санкт-Петербурга | Python, t-тест Уэлча |
-| [A/B-тест интерфейса](./ecommerce-interface-ab-test/) | Оценить статистический и бизнес-эффект нового интерфейса | Python, z-тест пропорций |
-| [Юнит-экономика приложения](./product-unit-economics/) | Найти причины стагнации выручки и оценить каналы привлечения | Python, LTV, CAC, ROI, retention |
-| [Недвижимость Санкт-Петербурга](./real-estate-listings-analysis/) | Исследовать сроки публикации и сезонность объявлений | PostgreSQL, CTE, оконные функции |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="./marketplace-product-analytics/"><img src="./marketplace-product-analytics/assets/channel-performance.png" alt="Расходы и выручка маркетплейса по каналам" width="100%"></a>
+      <br><strong><a href="./marketplace-product-analytics/">Продуктовая аналитика маркетплейса</a></strong>
+      <br>Диагностика каналов, юнит-экономики и A/B-теста бонуса. Обнаружен неэффективный рост TikTok-трафика; в эксперименте конверсия выросла на 6,44 п. п.
+      <br><sub>Python · когортный анализ · A/B-тест</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="./product-unit-economics/"><img src="./product-unit-economics/assets/tiptop-roi.png" alt="ROI когорт Procrastinate Pro+" width="100%"></a>
+      <br><strong><a href="./product-unit-economics/">Юнит-экономика Procrastinate Pro+</a></strong>
+      <br>Анализ CAC, LTV, ROI и retention. Выявлены перегрев TipTop, убыточность FaceBoom и потенциал RocketSuperAds.
+      <br><sub>Python · LTV/CAC/ROI · retention</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="./wid-product-analytics/"><img src="./wid-product-analytics/assets/product-funnel.png" alt="События продуктовой воронки WID" width="100%"></a>
+      <br><strong><a href="./wid-product-analytics/">Продуктовая аналитика WID</a></strong>
+      <br>SQL-метрики, A/B-тест и дашборд. Регистрация через Яндекс ID увеличила конверсию на 7,17 п. п.
+      <br><sub>Python · PostgreSQL · DataLens</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="./fintech-onboarding-ab-test/"><img src="./fintech-onboarding-ab-test/assets/historical-funnel.png" alt="Воронка финтех-приложения" width="100%"></a>
+      <br><strong><a href="./fintech-onboarding-ab-test/">A/B-тест обучающего онбординга</a></strong>
+      <br>Проверка влияния обучения инвестиционным рискам. Конверсия во второй депозит выросла на 61% без значимого снижения первого депозита.
+      <br><sub>Python · статистика · bootstrap</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="./taxi-payment-data-pipeline/"><img src="./taxi-payment-data-pipeline/assets/pipeline.svg" alt="Архитектура пайплайна поездок такси" width="100%"></a>
+      <br><strong><a href="./taxi-payment-data-pipeline/">Витрина поездок такси</a></strong>
+      <br>Ежедневный пайплайн от Parquet в S3 до аналитической витрины ClickHouse, оркестрируемый Airflow.
+      <br><sub>PySpark · Airflow · S3 · ClickHouse</sub>
+    </td>
+    <td width="50%" valign="middle">
+      <strong>Почему эти проекты</strong>
+      <br>Подборка показывает полный цикл работы: постановку продуктового вопроса, SQL и Python-анализ, проверку гипотез, финансовую интерпретацию и автоматизацию расчётов.
+    </td>
+  </tr>
+</table>
+
+## Все проекты
+
+| Направление | Проект | Ключевая задача | Инструменты |
+|---|---|---|---|
+| Продуктовая аналитика | [Маркетплейс](./marketplace-product-analytics/) | Найти причины снижения конверсии и оценить бонусный эксперимент | Python, когорты, A/B |
+| Юнит-экономика | [Procrastinate Pro+](./product-unit-economics/) | Объяснить стагнацию выручки и перераспределить маркетинговый бюджет | Python, LTV, CAC, ROI |
+| Продуктовая аналитика | [WID](./wid-product-analytics/) | Рассчитать метрики и оценить новый способ регистрации | Python, SQL, DataLens |
+| Эксперименты | [Обучающий онбординг](./fintech-onboarding-ab-test/) | Оценить влияние обучения рискам на депозитную активность | Python, bootstrap, z-тест |
+| Data engineering | [Витрина поездок такси](./taxi-payment-data-pipeline/) | Автоматизировать ежедневные агрегаты по способам оплаты | PySpark, Airflow, ClickHouse |
+| Эксперименты | [Интерфейс интернет-магазина](./ecommerce-interface-ab-test/) | Сопоставить статистический эффект с бизнес-порогом | Python, z-тест |
+| Статистика | [Активность читателей](./reading-app-hypothesis-test/) | Сравнить активность пользователей двух городов | Python, t-тест Уэлча |
+| Инвестиционная аналитика | [Финансирование стартапов](./startup-funding-analysis/) | Выбрать перспективные отрасли и инструменты финансирования | Python, pandas, IQR |
+| SQL | [Рынок вакансий](./sql-vacancy-analysis/) | Исследовать зарплаты, регионы, грейды и навыки аналитиков | PostgreSQL, DBeaver |
+| SQL | [Donor Search](./donor-search-analysis/) | Найти точки роста повторных донаций | PostgreSQL, CTE, JOIN |
+| SQL | [Недвижимость](./real-estate-listings-analysis/) | Исследовать сроки публикации и сезонность объявлений | PostgreSQL, окна, перцентили |
 
 ## Навыки
 
-- SQL: агрегатные и оконные функции, CTE, `JOIN`, фильтрация, работа с датами и сегментация;
-- Python: pandas, NumPy, Matplotlib, Seaborn и statsmodels;
-- продуктовая аналитика: DAU, WAU, MAU, конверсия, retention и воронки;
-- статистика: дизайн A/B-теста, проверка предпосылок и z-тест пропорций;
-- визуализация и представление аналитических выводов;
-- data engineering: PySpark, Airflow, S3, Parquet и ClickHouse.
+- **Продуктовая аналитика:** воронки, DAU/WAU/MAU, retention, когортный анализ, LTV, CAC и ROI;
+- **Эксперименты:** дизайн A/B-теста, проверка качества выборки, z-тест, t-тест Уэлча, bootstrap;
+- **SQL:** CTE, оконные функции, `JOIN`, агрегации, сегментация и работа с датами;
+- **Python:** pandas, NumPy, SciPy, statsmodels, Matplotlib и Seaborn;
+- **Data engineering:** PySpark, Airflow, S3, Parquet, JDBC и ClickHouse;
+- **Визуализация:** DataLens, когортные heatmap и представление выводов для бизнеса.
 
-## Как смотреть проекты
+## Как открыть проекты
 
-В каждой папке есть отдельный README с постановкой задачи, инструментами и результатами. SQL-запросы написаны для PostgreSQL и выполнялись в DBeaver. Для запуска Jupyter Notebook установите зависимости:
+Все выводы и основные графики сохранены в ноутбуках. Учебные датасеты не публикуются, поэтому часть проектов нельзя полностью перезапустить без исходных данных.
 
 ```bash
+git clone https://github.com/slava-ignatev/Practicum_projects.git
+cd Practicum_projects
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
+jupyter lab
 ```
 
-Учебные датасеты не опубликованы в репозитории. Результаты выполненных ячеек сохранены в ноутбуке, поэтому основные расчеты и графики доступны при просмотре на GitHub.
+Для SQL-проектов требуется PostgreSQL-совместимая база с учебными таблицами. Для data engineering-проекта дополнительно нужны доступы к S3, ClickHouse и Airflow.
