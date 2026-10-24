@@ -1,0 +1,19 @@
+.DS_Store
+.ipynb_checkpoints/
+.idea/
+.vscode/
+__pycache__/
+.venv/
+venv/
+
+# Local data and database files
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# DBeaver workspace and connection settings
+.dbeaver/
+.metadata/
+data-sources.json
+credentials-config.json
